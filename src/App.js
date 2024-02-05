@@ -1,19 +1,21 @@
+import React from "react";
+import { BrowserRouter as Router, Link, Route, Routes } from "react-router-dom";
 import "./App.css";
+import SelectPage from "./pages/selectPage.jsx";
 
 function App() {
   return (
-    <div className="App">
-      {
-        <button
-          style={{ fontSize: "16px", padding: "10px 20px" }}
-          onClick={() => {
-            alert("clicked");
-          }}
-        >
-          Generate your travel plan now!
+    <Router>
+      <div className="App">
+        <button>
+          <Link to="/selectPage">Generate your travel plan now!</Link>
         </button>
-      }
-    </div>
+
+        <Routes>
+          <Route path="/selectPage" element={<SelectPage />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
