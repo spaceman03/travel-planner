@@ -4,12 +4,16 @@ import SelectPage from "./selectPage.jsx";
 import "./landingPage.css";
 import logo from "../logo.png";
 
-const LandingPage = () => {
+const LandingPage = ({ setShowLandingPage }) => {
+  const handleButtonClick = () => {
+    // Call the function from props to hide the landing page
+    setShowLandingPage(false);
+  };
   return (
     <Router>
       <div className="landingPage">
         <img src={logo} alt="Landing page" />
-        <button>
+        <button onClick={handleButtonClick}>
           <Link to="/selectPage">Generate your travel plan now!</Link>
         </button>
 
