@@ -1,0 +1,26 @@
+.landingPage {
+  /* Set the background image to cover the entire viewport */
+  background-image: url("../logo.png");
+  background-size: cover;
+  background-position: center;
+  /* Set the height of the container to fill the viewport */
+  height: 100vh;
+  /* Ensure the background image covers the entire container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Optionally, you can add additional styles for text or other content */
+  color: white;
+  font-size: 24px;
+}
+
+button {
+  font-size: 20px;
+  padding: 15px 30px;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 200px;
+  left: 30%;
+  transform: translateX(-50%);
+  text-decoration: none;
+}
