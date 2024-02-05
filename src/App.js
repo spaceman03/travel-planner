@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Edit <code>src/landingPage.jsx</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -17,6 +17,14 @@ function App() {
         >
           Learn React
         </a>
+        <button
+          style={{ fontSize: "16px", padding: "10px 20px" }}
+          onClick={() => {
+            alert("clicked");
+          }}
+        >
+          Click me
+        </button>
       </header>
     </div>
   );
