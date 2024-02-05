@@ -33,7 +33,7 @@ const SelectPage = () => {
       />
       <BudgetButton onSelect={setSelectedBudget} />
       <PurposeButton onSelect={setSelectedPurpose} />
-      <button onClick={() => handleLetsGoClick()} className="App-button">
+      <button onClick={() => handleLetsGoClick()} className="selectPage-button">
         Let's Go!
       </button>
     </div>
