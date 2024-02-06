@@ -1,4 +1,5 @@
 ## Introduction
+Welcome to TravelGo!   
 This is a website where you can generate a personalized travel plan based on **Location**, **Start Date**, **End Date**, **Budget** and **Purpose of trip**.
 
 ## Instructions
